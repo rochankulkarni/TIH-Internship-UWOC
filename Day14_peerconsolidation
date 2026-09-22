@@ -1,24 +1,25 @@
-# Day 14: Peer Consultation & Week-2 Package Readiness
+# Day 14: Peer Consultation and Week-2 Package Readiness
 
 ## Deliverables Summary
-* **Cross-Peer Comparison Matrix of EDA Insights**
-* **Detailed Evaluation of Difficult Environmental Classes and Condition-Wise Noise**
-* **Documentation of One Peer Insight and One Frozen Research Hypothesis**
-* **Consolidated Week-2 Project Package Assembly Verification**
+
+* Cross-Peer Comparison Matrix of EDA Insights
+* Detailed Evaluation of Difficult Environmental Classes and Condition-Wise Noise
+* Documentation of One Peer Insight and One Frozen Research Hypothesis
+* Consolidated Week-2 Project Package Assembly Verification
 
 ---
 
-## Technical Context & Overview
+## Technical Context and Overview
 
 ### What I Did on Day 14
 On Day 14, I finalized the Week-2 progress package by conducting a peer evaluation session. Rather than exchanging codebase files, we directly benchmarked our analytical EDA discoveries, signal distributions, and water degradation thresholds. We mapped out the explicit behavioral differences of the optical photoresistor receiver under difficult transmission classes, logged actionable peer observations regarding frequency-dependent noise spikes, and locked in our core machine learning hypotheses for the upcoming Week-3 multi-variable model training phase.
 
 ---
 
-## Peer EDA Comparison & Diagnostic Review
+## Peer EDA Comparison and Diagnostic Review
 
 ### 1. Feature Distribution and Class Spacing Comparisons
-* **Baseline Clear Tracking (1-2 NTU):** Peer review confirms absolute bimodal tracking separation. Both analyses isolated identical resting voltage clusters: the logic-low state rests tightly at ~1118 mV, while the logic-high state anchors at ~2341 mV. 
+* **Baseline Clear Tracking (1-2 NTU):** Peer review confirms absolute bimodal tracking separation. Both analyses isolated identical resting voltage clusters: the logic-low state rests tightly at ~1118 mV, while the logic-high state anchors at ~2341 mV.
 * **Turbidity Attenuation Trends:** Both evaluations independently discovered that increasing turbidity parameters do not impact the logic-low baseline voltage. Instead, light scattering selectively dampens the logic-high state peak, compressing its amplitude and pushing it down toward the hardware midpoint line.
 
 ### 2. Analysis of Difficult Classes and Conditions
@@ -47,15 +48,15 @@ The following structural artifacts have been validated, archived, and compiled i
 ```text
 UWOC_useing_photoresistor-main/
 ├── dataset_v1_frozen/
-│   ├── X_train_v1.npy                # Cleaned training inputs (6,809 samples)
-│   ├── X_test_v1.npy                 # Cleaned testing inputs (1,703 samples)
-│   ├── y_train_v1.csv                # Integer-encoded training labels
-│   ├── y_test_v1.csv                 # Integer-encoded testing labels
-│   └── approved_preprocessor_v1.pkl  # Reusable data scaler pipeline object
+│   ├── X_train_v1.npy
+│   ├── X_test_v1.npy
+│   ├── y_train_v1.csv
+│   ├── y_test_v1.csv
+│   └── approved_preprocessor_v1.pkl
 └── documentation/
     ├── DAY_9_CLEANING_SPLIT_REVIEW.md
     ├── DAY_10_EDA_SEPARABILITY.md
     ├── DAY_11_PREPROCESSING_PIPELINE.md
     ├── DAY_12_PREPROCESSING_REVIEW.md
-    └── DAY_14_PEER_REVIEW_WEEK2.md  # Main Week-2 sign-off file
+    └── DAY_14_PEER_REVIEW_WEEK2.md
 ```
